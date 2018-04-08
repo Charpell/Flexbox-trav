@@ -1,5 +1,17 @@
 .container-1 {
-  
+  /* display from row stack to cloumns */
+  display: flex;
+
+  /* Align a box-size based on its content. By default it is set to strech */
+  /* 
+  align-items: flex-start
+  align-items: flex-center
+  align-items: flex-end 
+  align-items: flex-strech 
+  */
+
+  /* Change direction to column */
+  flex-direction: column
 }
 
 .container-1 div{
@@ -8,14 +20,20 @@
 }
 
 .box-1 {
+  /* width-ratio */
+  flex: 2; 
 
+  /* The order they display */
+  order: 2;
 }
 
 .box-2 {
-  
+  flex: 1;
+  order: 1;
 }
 
 .box-3 {
-  
+  flex: 1;
+  order: 3;
 }
 
