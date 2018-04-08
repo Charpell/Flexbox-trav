@@ -1,36 +1,39 @@
-.container-1 {
-  /* display from row stack to cloumns */
-  display: flex;
+@media(min-width: 468px) {
+  .container-1 {
+    /* display from row stack to cloumns */
+    display: flex;
+  
+    /* Align a box-size based on its content. By default it is set to strech */
+    /* 
+    align-items: flex-start
+    align-items: flex-center
+    align-items: flex-end 
+    align-items: flex-strech 
+    */
+  
+    /* Change direction to column */
+    /* flex-direction: column */
+  }
+  
+  .container-2 {
+    display: flex;
+  
+    /* Display group of boxes either at the start, end or center */
+    /* justify-content: center */
+    /* justify-content: flex-start */
+    /* justify-content: flex-end */
+  
+    /* Put Space between Box */
+    justify-content: space-between;
+  
+    /* Put Space between Box around the margin */
+    /* justify-content: space-around; */
+  }
 
-  /* Align a box-size based on its content. By default it is set to strech */
-  /* 
-  align-items: flex-start
-  align-items: flex-center
-  align-items: flex-end 
-  align-items: flex-strech 
-  */
-
-  /* Change direction to column */
-  /* flex-direction: column */
 }
 
-.container-2 {
-  display: flex;
 
-  /* Display group of boxes either at the start, end or center */
-  /* justify-content: center */
-  /* justify-content: flex-start */
-  /* justify-content: flex-end */
 
-  /* Put Space between Box */
-  justify-content: space-between;
-
-  /* Put Space between Box around the margin */
-  /* justify-content: space-around; */
-  
-  
-
-}
 
 .container-1 div, .container-2 div{
   border: 1px #ccc solid;
